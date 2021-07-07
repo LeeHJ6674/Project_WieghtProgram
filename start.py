@@ -33,8 +33,10 @@ def record():
             yn = False
         elif s == 'N':
             pass
-
-
+    conn.commit()
+def load() :
+    print('')
+    #1. 오름차순, 내림차순
 
 
 

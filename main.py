@@ -36,6 +36,25 @@ print(c.fetchall())              #데이터 불러오기
 c.execute("SELECT * FROM table1")
 print(c.fetchall())              #전체 데이터 불러오기
 
+####### SQL 문법########
+# ORDER BY, 오름차순 정렬
+#SELECT * FROM tbl_name ORDER BY column1
+# ORDER BY, 내림차순 정렬
+#SELECT * FROM tbl_name ORDER BY -column1
+# 중복제거, distinct
+#SELECT distinct column1 FROM tbl_name
+# 사이의 값, BETWWEN (>=, <=)
+#SELECT * FROM tbl_name WHERE column1 between 2005 and 2010
+# 여러개의 조건으로 데이터를 가져올 때, in
+#SELECT * FROM tbl_name IN column1 in (2005,2010)
+# 특정문구가 포함된 데이터를 가져올 때, Like
+#SELECT *  FROM tbl_name WHERE column1 LIKE '%1110'
+#############################
+
+
+
+
+
 ##########################################################################################################################
 
 c.execute("UPDATE table1 SET name=? WHERE id=?", ('NEW1', 1))                       #데이터 수정1
